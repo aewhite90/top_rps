@@ -2,11 +2,60 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
   <title>Rock Paper Scissors</title>
-  <style>
-  </style>
 </head>
 <body>
-  <script src='script.js'></script>
+  <div class='container-fluid'>
+    <div class='row-justify-content-md-center text-center'>
+      <div class='col'>
+        <a><img src='images/header1.png' class='headerimg'></a>
+        <h1>First to 5 Wins!</h1>
+      </div>
+    </div>
+    <div id='fieldOfPlay'>
+      <div class='row'>
+        <div class='col-lg'></div>
+        <div id='player' class='col text-center rpsbtn'>
+          <h2>You<h2>
+          <button class='btn btn-outline-light movebtn' id='rock'>
+            <img src='images/rock.png' class="btnimg">
+            <br>Rock</button>
+          <button class='btn btn-outline-light movebtn' id='paper'>
+            <img src='images/paper.png' class="btnimg">
+            <br>Paper</button>
+          <button class='btn btn-outline-light movebtn' id='scissors'>
+            <img src='images/scissors.png' class="btnimg">
+            <br>Scissors</button>
+        </div>
+        <div class='col-sm'></div>
+        <div id='computer' class='col text-center rpsbtn'>
+          <h2>Computer</h2>
+          <button class='btn btn-outline-light' id='compRock'><img src='images/rock.png' class="btnimg"><br>Rock</button>
+          <button class='btn btn-outline-light' id='compPaper'><img src='images/paper.png' class="btnimg"><br>Paper</button>
+          <button class='btn btn-outline-light' id='compScissors'><img src='images/scissors.png' class="btnimg"><br>Scissors</button>
+        </div>
+        <div class='col-lg'></div>
+      </div>
+    </div>
+    <div id='gameResults'>
+      <div class='col'>
+      <h2>Results</h2>
+      <div id='score'></div>
+      <h2 id='winner'></h2>
+      </div>
+    </div>
+    <div id='resetButton' class='row'>
+      <button class='btn btn-outline-warning' id='reset'><img src='images/reset.jpg' class="btnimg"><br>Play Again?</button>
+    </div>
+  </div>
+  <div id='footer' class='span'>
+    <hr>
+    <footer>Made by aewhite90</footer>
+  </div>
 </body>
+<script src='script.js'></script>
 </html>
