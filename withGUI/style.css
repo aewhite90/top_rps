@@ -1,0 +1,103 @@
+body {
+  background-color: #618685;
+}
+
+h1 {
+  color: #fefbd8;
+  margin-top: -75px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #fefbd8;
+}
+
+#score {
+  color: #fefbd8;
+}
+
+.headerimg {
+  height: 15vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.rpsbtn {
+  border: 2px solid #fefbd8;
+}
+
+.btnimg {
+  height: 45px;
+  border-radius: 3px;
+}
+
+.btn {
+  margin-top: 10px;
+  text-align: center;
+  transition: all 0.08s ease;
+  transform: scale(0.95);
+}
+
+#resetButton {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75px;
+  display: none;
+}
+
+#gameResults {
+  border: 2px solid #fefbd8;
+  width: 450px;
+  margin-top: 75px;
+  padding: 10px 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.unplayed {
+  transform: scale(0.95);
+}
+
+.played {
+  transform: scale(1.1);
+}
+
+.pulse {
+  animation: pulse 0.75s 1;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0rem rgba(248,249,250,.5);
+  }
+
+  50% {
+    box-shadow: 0 0 0 .3rem rgba(248,249,250,.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0rem rgba(248,249,250,.5);
+  }
+}
+
+#footer {
+  color: #fefbd8;
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  line-height: 15px;
+  width: 100%;
+  text-align: center;
+}
